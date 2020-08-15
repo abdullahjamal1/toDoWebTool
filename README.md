@@ -9,5 +9,5 @@ filtering tasks by their status ,priority , create date and due date.
 
 searching from database based on keywords.
 
-================================================================================
+------------------------------------------------------------------------------
 Technologies used :- HTML, CSS, Spring-Boot, MySQL, JPA , thymeleaf
