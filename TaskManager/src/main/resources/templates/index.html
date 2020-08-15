@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Task Manager</title>
+<style>
+	body{
+		background-color: rgb(199, 252, 234, 40);
+	}
+	.tabularHead{
+		color : rgb(255, 255, 255);
+		background-color: #00909E;
+		font-weight : bold;
+		word-wrap: break-word;
+		max-width: 55px;
+	}
+	.tabularData{
+	    color: rgb(0, 0, 0);
+	    background-color: rgb(245, 238, 106);
+		width:50px;
+		height:80%;
+		overflow-x:auto;
+		word-wrap: break-word;
+		max-width: 50px;
+
+	}
+</style>
+</head>
+<body>
+<div align="center">
+
+    <h1>Task List</h1>
+    <tr>
+        <td>
+            <button> <a href="/new">Create New Task</a>  </button>
+        </td>
+        <br/>
+	<td></td>
+	<br/>
+        <td>
+            <button> <a href="/filter">Filter Task</a>  </button>
+        </td>
+	<td></td>
+    </tr>  
+<br/><br/>
+    <form action="#" th:action="@{'/search/'}" th:object="${task}" method="post">
+        <tr>  
+            <td><input type="text" th:field="*{task_title}"/></td>    
+            <td><button type="submit">search</button></td>
+        </tr> 
+    </form>
+    
+    <br/><br/>
+
+    <table border="1" cellpadding="10">
+    
+        <thead class= "tabularHead">
+        
+            <tr>
+           <!--  <th>Task ID</th> -->
+             
+                <th>Title</th>
+                <th style="width:200px;">Description</th>
+                <th>Create Date</th>
+                <th>Due Date</th> 
+                <th>Status</th>
+                <th>Priority</th>
+                <th>Action</th>
+            </tr>
+            
+        </thead>
+        
+        <tbody>
+        
+            <tr th:each="task : ${listTasks}">
+
+                <td th:text="${task.task_title}" class = "tabularData">  </td>
+                
+	        	<td class = "tabularData"> 
+	        	<div style = "overflow-y : scroll; max-height : 100px ;" th:text="${task.task_description}" > </div>
+	        	</td>
+            	  
+                <td th:text="${task.addDate}" class = "tabularData">  </td>
+                <td th:text="${task.dueDate}" class = "tabularData">  </td> 
+                <td th:text="${task.status}" class = "tabularData">    </td>
+                <td th:text="${task.priority}" class = "tabularData">  </td>
+                
+                <td class = "tabularData">
+                    <a th:href="@{'/edit/' + ${task.id}}">Edit</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a th:href="@{'/delete/' + ${task.id}}">Delete</a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>   
+</div>   
+</body>
+</html>

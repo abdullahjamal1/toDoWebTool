@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>task filter menu</title>
+</head>
+<body>
+    <div align="center">
+        <h1>filter Task</h1>
+        <br />
+        
+        
+        
+        <table border="0" cellpadding="10">
+<tr>
+	<form action="#" th:action="@{'/filter/status/'}"  th:object="${task}" method="post">
+		<td>
+		  <label>Filter by status :</label>
+		</td>
+		<td>
+		  <select th:field = "*{status_id}">
+			    <option  status_id="1" value="1">pending</option>
+			    <option  status_id="2" value="2">completed</option>
+		  </select>
+		</td>
+		<td>
+			  <input type="submit">
+		</td>
+	</form>
+</tr>
+
+
+	<tr>
+		<form action="#" th:action="@{'/filter/priority/'}" th:object="${task}" method="post">
+			<td>
+			  <label>Filter by priority :</label>
+			</td>
+			<td>
+			  <select th:field = "*{priority_id}">
+			    <option priority_id="1" value="1">high</option>
+			    <option priority_id="2" value="2">medium</option>
+			    <option priority_id="3" value="3">low</option>
+			  </select>
+			</td>
+			<td>
+			  <input type="submit">
+			</td>
+		</form>
+	</tr>
+</table>
+
+<table border="0" cellpadding="10">
+
+	<tr>
+		<form action="#" th:action="@{'/filter/createDate/'}" th:object="${task}" method="post">
+			<td>
+			  <label for="cars">Filter by create date :</label>
+			</td>
+			<td>
+			  <label> From:</label>
+			  <input th:field ="*{addDate}" type="date">
+			</td>
+			<td>
+			  <label> To:</label>
+			  <input th:field ="*{dueDate}" type="date">
+			</td>
+			<td>
+			  <input type="submit">
+			</td>
+		</form>
+	</tr>
+
+	<tr>
+		<form action="#" th:action="@{'/filter/dueDate/'}" th:object="${task}" method="post">
+			<td>
+			  <label for="cars">Filter by due date :</label>
+			</td>
+			<td>
+			  <label> From:</label>
+			  <input th:field ="*{addDate}" type="date">
+			</td>
+			<td>
+			  <label> To:</label>
+			  <input th:field ="*{dueDate}" type="date">
+			</td>
+			<td>
+			  <input type="submit">
+			</td>
+		</form>
+	</tr>
+</table>
+    </div>
+</body>
+</html>
