@@ -101,7 +101,7 @@ $ mvn spring-boot:run
 
 ## EER Diagram
 
-
+![EER diagram](https://github.com/aj941ga/toDoWebTool/blob/master/snapShots/database.PNG)
 ## Packages
 
 *   `api` - API utilities;
