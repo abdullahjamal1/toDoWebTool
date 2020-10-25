@@ -20,7 +20,7 @@ A task management site that displays the list of existing tasks and allows the u
   * [Running the application locally](#running-the-application-locally)
   * [Running the application with IDE](#Running-the-application-with-IDE)
   * [Running the application with Maven](#Running-the-application-with-Maven)
-  * [EER Diagram](#EER- Diagram)
+  * [EER Diagram](#EER-Diagram)
   * [Packages](#Packages)
 
 ## Application Screenshots
