@@ -49,6 +49,14 @@ A task management site that displays the list of existing tasks and allows the u
 
 ### To-Do
 
+[X] CRUD operations
+[X] supports filtering tasks by other attributes
+[X] support searching from database based on keywords
+[ ] extend site to support multiple users
+[ ] login page for user
+[ ] other basic features
+[ ] testing
+
 
 ## Running the application locally
 
@@ -96,6 +104,7 @@ $ mvn spring-boot:run
 ## EER Diagram
 
 ![EER diagram](https://github.com/aj941ga/toDoWebTool/blob/master/snapShots/database.PNG)
+
 ## Packages
 
 *   `api` - API utilities;
