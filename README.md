@@ -44,11 +44,6 @@ A task management site that displays the list of existing tasks and allows the u
 * 	[Spring Boot](https://spring.io/projects/spring-boot) - Framework to ease the bootstrapping and development of new Spring Applications
 * 	[Maven](https://maven.apache.org/) - Dependency Management
 
-###  Libraries and Plugins
-
-* 	[Thymeleaf With Dialect](https://github.com/Antibrumm/thymeleaf-extras-with-dialect) - A dialect for Thymeleaf that allows you to use attributes with a "with" prefix to avoid having long "th:with"-expressions.
-* 	[Thymeleaf Layout Dialect](https://github.com/ultraq/thymeleaf-layout-dialect) - A dialect for Thymeleaf that lets you build layouts and reusable templates in order to improve code reuse.
-
 ### Others 
 
 * 	[git](https://git-scm.com/) - Free and Open-Source distributed version control system
