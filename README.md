@@ -14,7 +14,6 @@ A task management site that displays the list of existing tasks and allows the u
     + [Data](#data)
     + [Client - Frontend/UI](#client---frontend-ui)
     + [Server - Backend](#server---backend)
-    + [Libraries and Plugins](#libraries-and-plugins)
     + [Others](#others)
   * [To-Do](#to-do)
   * [Running the application locally](#running-the-application-locally)
