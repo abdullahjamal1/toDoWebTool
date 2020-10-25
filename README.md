@@ -1,18 +1,13 @@
 # toDoWebTool
 A task management site that displays the list of existing tasks and allows the user to add new tasks, update and delete existing tasks from the database.
 
-supports :- 
-------------------------------------------------------------------
-CRUD operations.
+## supports 
 
-filtering tasks by their status ,priority , create date and due date.
-
-searching from database based on keywords.
-
-Welcome to the toDoWebTool wiki!
+* CRUD operations.
+* filtering tasks by their status ,priority , create date and due date.
+* searching from database based on keywords.
 
 ## Table of contents
-
 
   * [Application Screenshots](#application-screenshots)
   * [Tech stack & Open-source libraries](#tech-stack---open-source-libraries)
@@ -23,6 +18,10 @@ Welcome to the toDoWebTool wiki!
     + [Others](#others)
   * [To-Do](#to-do)
   * [Running the application locally](#running-the-application-locally)
+  * [Running the application with IDE](#Running-the-application-with-IDE)
+  * [Running the application with Maven](#Running-the-application-with-Maven)
+  * [EER Diagram](#EER- Diagram)
+  * [Packages](#Packages)
 
 ## Application Screenshots
 
@@ -103,35 +102,17 @@ $ mvn spring-boot:run
 ## EER Diagram
 
 
-## Files and Directories Structure
-
-The project (a.k.a. project directory) has a particular directory structure. A representative project is shown below:
-
-```text
-```
-
 ## Packages
 
 *   `api` - API utilities;
-* 	`authentication` - application user authentication;
-* 	`configuration` - app configurations;
 * 	`controllers` - to listen to the client;
-* 	`exception` - to hold custom exception handling;
-* 	`models` - to hold our entities;
-* 	`repository` - to communicate with the database;
-* 	`security` - security configuration;
 * 	`service` - to hold business logic;
 * 	`util` - to hold our utility classes;
 
 * 	`resources/` - Contains all the static resources, templates and property files.
-* 	`resources/data/mysql.migrations/` - Contains initial table structure & table data 
 * 	`resources/static` - contains static resources such as css, js and images.
 * 	`resources/templates` - contains server-side templates which are rendered by Spring.
-* 	`resources/templates/fragments` - contains reusable code fragments.
-* 	`resources/templates/pages` - contains server-side templates built using fragments.
 * 	`resources/application.properties` - It contains application-wide properties. Spring reads the properties defined in this file to configure your application. You can define server’s default port, server’s context path, database URLs etc, in this file.
-
-* 	`test/` - contains unit and integration tests
 
 * 	`pom.xml` - contains all the project dependencies
 
